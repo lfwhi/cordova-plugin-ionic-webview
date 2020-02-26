@@ -32,12 +32,12 @@
         <engine name="apple-ios" version=">=11.0"/>
 	</engines>
 
-  <js-module src="src/www/util.js" name="IonicWebView">
-      <clobbers target="Ionic.WebView"/>
-  </js-module>
 
   <!-- ios -->
   <platform name="ios">
+    <js-module src="src/www/util.js" name="IonicWebView">
+      <clobbers target="Ionic.WebView"/>
+    </js-module>
     <js-module src="src/www/ios/ios-wkwebview-exec.js" name="ios-wkwebview-exec">
       <clobbers target="cordova.exec"/>
     </js-module>
